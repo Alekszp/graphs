@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TDW</title>
+    <link href="style_dtw.css" rel="stylesheet"></link>
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"></link>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script src="js/jquery.knob.js"></script>
+    <script>
+        $(function() {
+            $(".knob").knob();
+
+            // Example of infinite knob, iPod click wheel
+            var val,up=0,down=0,i=0
+                ,$idir = $("div.idir")
+                ,$ival = $("div.ival")
+                ,incr = function() { i++; $idir.show().html("+").fadeOut(); $ival.html(i); }
+                ,decr = function() { i--; $idir.show().html("-").fadeOut(); $ival.html(i); };
+            $("input.infinite").knob(
+                {
+                    'min':0
+                    ,'max':20
+                    ,'stopper':false
+                    ,'change':function(v){
+                    if(val>v){
+                        if(up){
+                            decr();
+                            up=0;
+                        }else{up=1;down=0;}
+                    }else{
+                        if(down){
+                            incr();
+                            down=0;
+                        }else{down=1;up=0;}
+                    }
+                    val=v;
+                }
+                }
+            );
+        });
+    </script>
+    <!--<script src="js/js.js"></script>-->
+</head>
+<body>
+    <div class="left-panel">
+        <div class="left-panel-top">
+            <div class="logo">tdw</div>
+            <div class="user-photo-wraper">
+                <img class="user-photo" src="img/user_photo.png" alt="User photo"></img>
+            </div>
+            <div class="settings">
+                <a><i class="ion-upload"></i></a>
+                <a><i class="ion-gear-a"></i></a>
+                <a><i class="ion-power"></i></a>
+            </div>
+        </div>
+        <div class="main-menu">
+            <ul>
+                <a><li><i class="ion-monitor"></i>Dashboard</li></a>
+                <a><li><i class="ion-person"></i>Users</li></a>
+                <a><li><i class="ion-camera"></i>Media</li></a>
+                <a><li><i class="ion-android-apps"></i>Widgets</li></a>
+                <a><li><i class="ion-pie-graph"></i>Statistics</li></a>
+                <a><li><i class="ion-document"></i>Reports</li></a>
+                <a><li><i class="ion-information"></i>Info</li></a>
+            </ul>
+        </div>
+        <hr noshade size="1"/>
+    </div>
+    <div class="right-side">
+        <div class="header">
+            <div class="panel-name">
+                <h1>Dashboard</h1>
+                <span>summary of your application</span>
+            </div>
+            <div class="search">
+                <form>
+                    <input placeholder="search..." name="user" form="data">
+                    <i class="ion-android-search"></i>
+                </form>
+                <button class="help-support">help/support</button>
+            </div>
+        </div>
+        <div class="section">
+            <div class="graphic">
+                <div class="graph-name">
+                    <h3>weakly statistics</h3>
+                    <i class="ion-refresh"></i>
+                </div>
+
+            </div>
+            <div class="usage-overview">
+                usage-overview
+            </div>
+        </div>
+        <div class="round-progress">
+            <div class="backlog">
+                <h3>backlog</h3>
+                <input class="knob" data-width="150" data-fgColor="#56a8e7" data-skin="tron" data-thickness=".05" value="19">
+            </div>
+            <div class="toDo">
+                <h3>to do</h3>
+                <input class="knob" data-width="150" data-fgColor="#f1705c" data-skin="tron" data-thickness=".05" value="31">
+            </div>
+            <div class="inProgress">
+                <h3>in progress</h3>
+                <input class="knob" data-width="150" data-fgColor="#fdaa29" data-skin="tron" data-thickness=".05" value="65">
+            </div>
+            <div class="done">
+                <h3>done</h3>
+                <input class="knob" data-width="150" data-fgColor="#8fc842" data-skin="tron" data-thickness=".05" value="69">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
