@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI Light";
+}
+body {
+    display: flex;
+}
+.left-panel {
+    float: left;
+    height: 100vh;
+    flex: 1.5;
+    background-color: #191818;
+    color: #666666;
+}
+.right-side {
+    flex: 8;
+    color: #666666;
+}
+.left-panel-top {
+    justify-content: center;
+}
+i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.settings {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: -5px;
+}
+.ion-upload {
+    font-size:18px;
+    position: relative;
+    top: 2px;
+}
+.ion-gear-a {
+    font-size:18px;
+    position: relative;
+    top: 2px;
+}
+.logo {
+    color: #d8381f;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: "HelveticaNeue LT 25 UltLight";
+    text-align: center;
+    margin-top: 30px;
+}
+.user-photo {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-position-x: 40px;
+    margin-top: 15px;
+}
+.user-photo-wraper {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+
+}
+.main-menu i {
+    margin-left: 10px;
+    margin-right: 15px;
+
+}
+.ion-person {
+    font-size: 15px;
+}
+.ion-camera {
+    font-size: 14px;
+}
+.ion-android-apps {
+    font-size: 15px;
+}
+.ion-pie-graph {
+    font-size: 11px;
+}
+.ion-document {
+    font-size: 15px;
+}
+.ion-information {
+    font-size: 15px;
+    padding-left: 3px;
+}
+.main-menu li {
+    border-left: 2px solid transparent;
+    height: 25px;
+    padding-top: 7px;
+}
+.main-menu li:hover {
+    color: white;
+    outline-offset: 10px;
+    border-left: 2px solid red;
+}
+hr {
+    color: #666666;
+    margin-top: 10px;
+}
+.header {
+    border: 1px solid black;
+    background-color: #f2f2f2;
+    height: 100px;
+    display: flex;
+}
+h1 {
+    display: inline-block;
+    margin-top: 26px;
+}
+.search {
+    display: flex;
+    text-align: right;
+}
+.search form {
+    justify-content: center;
+}
+.search input{
+    display: inline-block;
+    border-radius: 2px;
+    border: 1px;
+    height: 30px;
+    text-align: center;
+}
+.ion-android-search {
+    font-size: 18px;
+    position: relative;
+    right: 24px;
+    top: 1px;
+}
+.help-support {
+    background-color: #fdaa29;
+    border: 1px;
+    border-radius: 2px;
+    height: 30px;
+    text-align: center;
+    width: 100px;
+    color: white;
+    text-transform: uppercase;
+}
+.section {
+    border: 1px solid black;
+}
+graphic {
+    margin-left: 25px;
+}
+.graphic h3 {
+    text-transform: capitalize;
+}
+.ion-refresh {
+    font-size: 18px;
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+}
+.graph-name {
+    display: flex;
+}
+.round-progress {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+.backlog {
+       display: inline-block;
+   }
+.toDo {
+    display: inline-block;
+}
+.inProgress {
+    display: inline-block;
+    text-align: ;
+}
+.done {
+    display: inline-block;
+}
+.backlog h3 {
+    color: #56a8e7;
+    text-transform: capitalize;
+    text-align: center;
+}
+.toDo h3 {
+    color: #f1705c;
+    text-transform: capitalize;
+    text-align: center;
+}
+.inProgress h3 {
+    color: #fdaa29;
+    text-transform: capitalize;
+    text-align: center;
+}
+.done h3 {
+    color: #8fc842;
+    text-transform: capitalize;
+    text-align: center;
+}
