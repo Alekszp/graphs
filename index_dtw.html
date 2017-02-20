@@ -40,7 +40,6 @@
             );
         });
     </script>
-    <!--<script src="js/js.js"></script>-->
 </head>
 <body>
     <div class="left-panel">
@@ -88,10 +87,78 @@
                     <h3>weakly statistics</h3>
                     <i class="ion-refresh"></i>
                 </div>
+                <svg height="230" width="550">
+                    <polygon points="55,57 130,100 205,137 280,86 355,47 430,57 505,86 505,186 55,186" style="fill: #fdf4f3"/>
+                    <polyline points="55,57 130,100 205,137 280,86 355,47 430,57 505,86"
+                              style="fill:none;stroke:#dc6166;stroke-width:2"/>
+
+
+
+                    <circle cx="55" cy="57" r="5" stroke="#dc6166" stroke-width="3" fill="white" />
+                    <circle cx="130" cy="100" r="5" stroke="#dc6166" stroke-width="3" fill="white" />
+                    <circle cx="205" cy="135" r="5" stroke="#dc6166" stroke-width="3" fill="white" />
+                    <circle cx="280" cy="86" r="5" stroke="#dc6166" stroke-width="3" fill="white" />
+                    <circle cx="355" cy="47" r="5" stroke="#dc6166" stroke-width="3" fill="white" />
+                    <circle cx="430" cy="57" r="5" stroke="#dc6166" stroke-width="3" fill="white" />
+                    <circle cx="505" cy="86" r="5" stroke="#dc6166" stroke-width="3" fill="white" />
+
+                    <g fill="none" stroke="black" stroke-width="0.8">
+                        <path stroke-dasharray="0.8,0.8" d="M20 36 l520 0" />
+                        <path stroke-dasharray="0.8,0.8" d="M20 86 l520 0" />
+                        <path stroke-dasharray="0.8,0.8" d="M20 136 l520 0" />
+
+                        <path stroke-dasharray="0.8,0.8" d="M55 10 l0 177" />
+                        <path stroke-dasharray="0.8,0.8" d="M130 10 l0 177" />
+                        <path stroke-dasharray="0.8,0.8" d="M205 10 l0 177" />
+                        <path stroke-dasharray="0.8,0.8" d="M280 10 l0 177" />
+                        <path stroke-dasharray="0.8,0.8" d="M355 10 l0 177" />
+                        <path stroke-dasharray="0.8,0.8" d="M430 10 l0 177" />
+                        <path stroke-dasharray="0.8,0.8" d="M505 10 l0 177" />
+                    </g>
+
+                    <line x1="20" y1="186" x2="540" y2="186" style="stroke:black;stroke-width:0.8" />
+                    <text x="5" y="40" >60</text>
+                    <text x="5" y="90" >40</text>
+                    <text x="5" y="140" >20</text>
+                    <text x="40" y="205" >MON</text>
+                    <text x="120" y="205" >TUE</text>
+                    <text x="193" y="205" >WED</text>
+                    <text x="270" y="205" >THU</text>
+                    <text x="347" y="205" >FRI</text>
+                    <text x="422" y="205" >SAT</text>
+                    <text x="495" y="205" >SUN</text>
+                </svg>
 
             </div>
             <div class="usage-overview">
-                usage-overview
+                <h3>usage overview</h3>
+                <div class="progress">
+                    <span>a.</span>
+                    <div id="myProgress1">
+                        <div id="myBar1"></div>
+                    </div>
+
+                </div>
+                <div class="progress">
+                        <span>b.</span>
+                        <div id="myProgress2">
+                            <div id="myBar2"></div>
+                        </div>
+                </div>
+                <div class="progress">
+                    <span>c.</span>
+                    <div id="myProgress3">
+                        <div id="myBar3"></div>
+                    </div>
+
+                </div>
+                <div class="progress">
+                    <span>d.</span>
+                    <div id="myProgress4">
+                        <div id="myBar4"></div>
+                    </div>
+
+                </div>
             </div>
         </div>
         <div class="round-progress">

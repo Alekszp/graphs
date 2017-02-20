@@ -15,10 +15,11 @@ body {
 }
 .right-side {
     flex: 8;
-    color: #666666;
+    color: #989898;
 }
 .left-panel-top {
     justify-content: center;
+    min-width:115px;
 }
 i {
     margin-right: 10px;
@@ -29,6 +30,9 @@ i {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: -5px;
+}
+.settings a:hover {
+    color: white;
 }
 .ion-upload {
     font-size:18px;
@@ -46,7 +50,7 @@ i {
     text-transform: uppercase;
     font-family: "HelveticaNeue LT 25 UltLight";
     text-align: center;
-    margin-top: 30px;
+    margin-top: 22px;
 }
 .user-photo {
     border-radius: 50%;
@@ -100,18 +104,23 @@ hr {
     margin-top: 10px;
 }
 .header {
-    border: 1px solid black;
     background-color: #f2f2f2;
     height: 100px;
     display: flex;
+    justify-content: space-around;
 }
 h1 {
     display: inline-block;
     margin-top: 26px;
+    font-family: "HelveticaNeue LT 25 UltLight";
+}
+.panel-name span {
+    color: #c0c0c0;
 }
 .search {
     display: flex;
     text-align: right;
+    margin-top: 35px;
 }
 .search form {
     justify-content: center;
@@ -140,10 +149,11 @@ h1 {
     text-transform: uppercase;
 }
 .section {
-    border: 1px solid black;
+    display: flex;
 }
-graphic {
+.graphic {
     margin-left: 25px;
+    flex: 7;
 }
 .graphic h3 {
     text-transform: capitalize;
@@ -153,14 +163,76 @@ graphic {
     margin-left: 5px;
     position: relative;
     top: 2px;
+    color: #c0c0c0;
 }
 .graph-name {
     display: flex;
+    margin-top: 30px;
 }
+/*SVG styles*/
+svg {
+    font-size: 12px;
+}
+.usage-overview {
+    flex: 4;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+.usage-overview h3 {
+    text-transform: capitalize;
+    min-width: 130px;
+}
+.usage-overview span {
+
+    flex: 1;
+}
+.progress {
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+#myProgress1, #myProgress2, #myProgress3, #myProgress4 {
+    width: 100%;
+    background-color: #f2f2f2;
+    height: 10px;
+    flex: auto;
+    margin: 8px 5px 0 2px;
+}
+#myBar1 {
+    width: 19%;
+    background-color: #56a8e7;
+    height: 10px;
+    float: left;
+}
+#myBar2 {
+    width: 31%;
+    background-color: #f1705c;
+    height: 10px;
+    float: left;
+}
+
+#myBar3 {
+    width: 65%;
+    background-color: #fdaa29;
+    height: 10px;
+    float: left;
+}
+
+#myBar4 {
+    width: 69%;
+    background-color: #8fc842;
+    height: 10px;
+    float: left;
+}
+
+
+
+
 .round-progress {
-    border: 1px solid black;
     display: flex;
     justify-content: space-around;
+    margin-top: 50px;
 }
 .backlog {
        display: inline-block;
@@ -194,4 +266,7 @@ graphic {
     color: #8fc842;
     text-transform: capitalize;
     text-align: center;
+}
+.knob {
+    color: #666666 !important;
 }
